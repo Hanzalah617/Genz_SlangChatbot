@@ -1,0 +1,18 @@
+
+---
+
+## 📄 `devcontainer.json` (Optional – VS Code)
+
+```json
+{
+  "name": "Genz_SlangChatbot",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}
