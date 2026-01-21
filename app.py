@@ -5,32 +5,34 @@ from langchain_groq import ChatGroq
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.chains import create_retrieval_chain
 from langchain_core.prompts import ChatPromptTemplate
+
+# These are the specific imports that usually cause the error
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain.chains.retrieval import create_retrieval_chain
 
 # --- Page Configuration ---
 st.set_page_config(page_title="GenZ Slang Chatbot", page_icon="😎")
 st.title("😎 GenZ Slang Chatbot")
 
 # --- Load API Key ---
-# Make sure to add GROQ_API_KEY in Streamlit Cloud Secrets
+# Add your GROQ_API_KEY in the Streamlit Cloud Secrets setting
 groq_api_key = os.getenv("GROQ_API_KEY")
 
 if not groq_api_key:
-    st.error("Please set the GROQ_API_KEY in your environment variables or Streamlit secrets.")
+    st.warning("Please add your GROQ_API_KEY to Streamlit Secrets.")
     st.stop()
 
 # --- Vector Store Logic ---
 @st.cache_resource
 def load_vectorstore():
-    # Ensure the path to your data is correct relative to your repo root
-    try:
-        with open("data/documents.txt", "r", encoding="utf-8") as f:
-            text = f.read()
-    except FileNotFoundError:
-        st.error("Error: 'data/documents.txt' not found. Please check your file path.")
+    # Make sure your data folder is in your GitHub repo
+    if not os.path.exists("data/documents.txt"):
+        st.error("Missing 'data/documents.txt' file!")
         st.stop()
+
+    with open("data/documents.txt", "r", encoding="utf-8") as f:
+        text = f.read()
 
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=500,
@@ -39,7 +41,7 @@ def load_vectorstore():
 
     docs = splitter.create_documents([text])
 
-    # Using langchain-community/HuggingFaceEmbeddings
+    # This handles the embedding model download automatically
     embeddings = HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
@@ -51,14 +53,14 @@ vectorstore = load_vectorstore()
 # --- LLM and Chain Setup ---
 llm = ChatGroq(
     model_name="llama3-8b-8192",
-    temperature=0.3, # A little bit of creativity for slang
+    temperature=0.4,
     api_key=groq_api_key
 )
 
-# Define the Prompt (Essential for create_stuff_documents_chain)
+# A prompt template is REQUIRED for create_stuff_documents_chain to work
 prompt = ChatPromptTemplate.from_template("""
-You are a GenZ slang expert. Use the context below to explain the slang terms.
-If the answer isn't in the context, use your knowledge but keep the vibe cool.
+Answer the following question based only on the provided context. 
+If the answer isn't in the context, use your inner GenZ knowledge but stay helpful.
 
 Context:
 {context}
@@ -68,17 +70,19 @@ Question: {input}
 Answer:""")
 
 retriever = vectorstore.as_retriever()
-doc_chain = create_stuff_documents_chain(llm, prompt)
-qa = create_retrieval_chain(retriever, doc_chain)
 
-# --- User Interface ---
-query = st.text_input("Ask a Gen Z slang question (e.g., 'What does skibidi mean?'):")
+# Build the RAG chain
+combine_docs_chain = create_stuff_documents_chain(llm, prompt)
+retrieval_chain = create_retrieval_chain(retriever, combine_docs_chain)
+
+# --- Chat Interface ---
+query = st.text_input("Ask about some brainrot or slang:")
 
 if query:
-    with st.spinner("Vibing with the data..."):
+    with st.spinner("Cooking..."):
         try:
-            result = qa.invoke({"input": query})
-            st.markdown("### 😎 The Tea:")
-            st.success(result["answer"])
+            response = retrieval_chain.invoke({"input": query})
+            st.markdown("### ✨ Response:")
+            st.write(response["answer"])
         except Exception as e:
-            st.error(f"An error occurred: {e}")
+            st.error(f"Something went wrong: {e}")
