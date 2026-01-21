@@ -24,7 +24,7 @@ if not groq_api_key:
 # --- Vector Store Logic (Updated for CSV) ---
 @st.cache_resource
 def load_vectorstore():
-    file_path = "dataset.csv"
+    file_path = "Slang Dataset.csv"
     
     if not os.path.exists(file_path):
         st.error(f"Error: '{file_path}' not found in the root directory. Please upload it to your GitHub repo.")
