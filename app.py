@@ -1,51 +1,66 @@
 import streamlit as st
 import os
+import csv
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
+from langchain_core.documents import Document
 
 # --- Page Config ---
 st.set_page_config(page_title="GenZ Slang Bot", page_icon="😎")
 st.title("😎 GenZ Slang Chatbot")
 
 # --- API Key ---
+# Set 'GROQ_API_KEY' in Streamlit Cloud -> Settings -> Secrets
 groq_api_key = os.getenv("GROQ_API_KEY")
+
 if not groq_api_key:
     st.error("Please add GROQ_API_KEY to Streamlit Secrets.")
     st.stop()
 
-# --- Vector Store ---
+# --- Vector Store Logic (Updated for CSV) ---
 @st.cache_resource
 def load_vectorstore():
-    data_path = "data/documents.txt"
-    if not os.path.exists(data_path):
-        os.makedirs("data", exist_ok=True)
-        with open(data_path, "w") as f:
-            f.write("Skibidi: Bad or cool. Rizz: Charisma. Gyatt: Wow. Sigma: Alpha/Leader.")
-
-    with open(data_path, "r", encoding="utf-8") as f:
-        text = f.read()
-
-    splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
-    docs = splitter.create_documents([text])
+    file_path = "dataset.csv"
     
+    if not os.path.exists(file_path):
+        st.error(f"Error: '{file_path}' not found in the root directory. Please upload it to your GitHub repo.")
+        st.stop()
+    
+    docs = []
+    try:
+        with open(file_path, mode='r', encoding='utf-8-sig') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                # Combine all columns into a single string for the AI to read
+                # Example: "slang: rizz, definition: charisma"
+                content = " ".join([f"{k}: {v}" for k, v in row.items()])
+                docs.append(Document(page_content=content))
+    except Exception as e:
+        st.error(f"Error reading CSV: {e}")
+        st.stop()
+
+    if not docs:
+        st.error("The CSV file is empty!")
+        st.stop()
+
+    # Using stable HuggingFace embeddings
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     return FAISS.from_documents(docs, embeddings)
 
+# Initialize
 vectorstore = load_vectorstore()
-retriever = vectorstore.as_retriever()
+retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
-# --- The RAG Chain ---
-# UPDATED MODEL NAME HERE: llama-3.1-8b-instant
+# --- RAG Chain (Using the working Llama 3.1 model) ---
 llm = ChatGroq(model_name="llama-3.1-8b-instant", api_key=groq_api_key)
 
 template = """
-You are a GenZ slang expert. Use the context to answer the question. 
-If you don't know, say you're 'not vibing with that info'.
+You are a GenZ slang expert. Use the following retrieved slang definitions to answer the question. 
+Stay cool, helpful, and use a bit of GenZ vibe in your response.
 
 Context: {context}
 Question: {question}
@@ -57,6 +72,7 @@ prompt = ChatPromptTemplate.from_template(template)
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
+# The modern LCEL Chain
 rag_chain = (
     {"context": retriever | format_docs, "question": RunnablePassthrough()}
     | prompt
@@ -65,10 +81,10 @@ rag_chain = (
 )
 
 # --- UI ---
-user_query = st.text_input("What slang do you need translated?")
+user_query = st.text_input("Drop a slang term here (e.g., 'What is rizz?'):")
 
 if user_query:
-    with st.spinner("Cooking with Llama 3.1..."):
+    with st.spinner("Checking the files..."):
         try:
             response = rag_chain.invoke(user_query)
             st.markdown("### ✨ The Tea:")
