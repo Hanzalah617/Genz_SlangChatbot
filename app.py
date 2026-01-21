@@ -21,13 +21,13 @@ if not groq_api_key:
 # --- Vector Store ---
 @st.cache_resource
 def load_vectorstore():
-    if not os.path.exists("data/documents.txt"):
-        # Create dummy data if file is missing to prevent crash
+    data_path = "data/documents.txt"
+    if not os.path.exists(data_path):
         os.makedirs("data", exist_ok=True)
-        with open("data/documents.txt", "w") as f:
-            f.write("Skibidi: Bad or cool. Rizz: Charisma. Gyatt: Wow.")
+        with open(data_path, "w") as f:
+            f.write("Skibidi: Bad or cool. Rizz: Charisma. Gyatt: Wow. Sigma: Alpha/Leader.")
 
-    with open("data/documents.txt", "r", encoding="utf-8") as f:
+    with open(data_path, "r", encoding="utf-8") as f:
         text = f.read()
 
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
@@ -39,8 +39,9 @@ def load_vectorstore():
 vectorstore = load_vectorstore()
 retriever = vectorstore.as_retriever()
 
-# --- The RAG Chain (Modern LCEL Version) ---
-llm = ChatGroq(model_name="llama3-8b-8192", api_key=groq_api_key)
+# --- The RAG Chain ---
+# UPDATED MODEL NAME HERE: llama-3.1-8b-instant
+llm = ChatGroq(model_name="llama-3.1-8b-instant", api_key=groq_api_key)
 
 template = """
 You are a GenZ slang expert. Use the context to answer the question. 
@@ -56,7 +57,6 @@ prompt = ChatPromptTemplate.from_template(template)
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
-# This is the "Engine" - it replaces the broken retrieval_chain
 rag_chain = (
     {"context": retriever | format_docs, "question": RunnablePassthrough()}
     | prompt
@@ -68,9 +68,8 @@ rag_chain = (
 user_query = st.text_input("What slang do you need translated?")
 
 if user_query:
-    with st.spinner("Cooking..."):
+    with st.spinner("Cooking with Llama 3.1..."):
         try:
-            # We use .invoke directly on our custom chain
             response = rag_chain.invoke(user_query)
             st.markdown("### ✨ The Tea:")
             st.success(response)
