@@ -7,12 +7,10 @@ from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 from langchain_groq import ChatGroq
 
-# Page config
-st.set_page_config(page_title="Groq RAG Chatbot", layout="centered")
+st.set_page_config(page_title="Groq RAG Chatbot")
 
-st.title("⚡ Groq RAG-based Chatbot")
+st.title("⚡ Groq RAG Chatbot")
 
-# Load & embed data
 @st.cache_resource
 def load_vectorstore():
     with open("data/documents.txt", "r", encoding="utf-8") as f:
@@ -25,32 +23,26 @@ def load_vectorstore():
 
     docs = splitter.create_documents([text])
 
-    embeddings = HuggingFaceEmbeddings(
+    embeddings = HuggingFaceFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
 
-    vectorstore = FAISS.from_documents(docs, embeddings)
-    return vectorstore
+    return FAISS.from_documents(docs, embeddings)
 
 vectorstore = load_vectorstore()
 
-# Groq LLM
 llm = ChatGroq(
-    api_key=os.getenv("GROQ_API_KEY"),
     model_name="llama3-8b-8192",
-    temperature=0
+    temperature=0,
+    api_key=os.getenv("GROQ_API_KEY")
 )
 
-qa_chain = RetrievalQA.from_chain_type(
+qa = RetrievalQA.from_chain_type(
     llm=llm,
-    retriever=vectorstore.as_retriever(),
-    chain_type="stuff"
+    retriever=vectorstore.as_retriever()
 )
 
-# Chat UI
-query = st.text_input("Ask something from your data:")
+query = st.text_input("Ask a question from your data:")
 
 if query:
-    with st.spinner("Thinking..."):
-        answer = qa_chain.run(query)
-        st.success(answer)
+    st.write(qa.run(query))
