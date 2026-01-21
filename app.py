@@ -2,14 +2,14 @@ import streamlit as st
 import os
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 from langchain_groq import ChatGroq
 
-st.set_page_config(page_title="Groq RAG Chatbot")
+st.set_page_config(page_title="GenZ Slang Chatbot")
 
-st.title("⚡ Groq RAG Chatbot")
+st.title("😎 GenZ Slang Chatbot")
 
 @st.cache_resource
 def load_vectorstore():
@@ -42,7 +42,8 @@ qa = RetrievalQA.from_chain_type(
     retriever=vectorstore.as_retriever()
 )
 
-query = st.text_input("Ask a question from your data:")
+query = st.text_input("Ask a Gen Z slang question:")
 
 if query:
-    st.write(qa.run(query))
+    with st.spinner("Thinking..."):
+        st.success(qa.run(query))
