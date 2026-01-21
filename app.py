@@ -1,16 +1,18 @@
 import streamlit as st
+import os
+
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
-from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA
+from langchain_groq import ChatGroq
 
 # Page config
-st.set_page_config(page_title="RAG Chatbot", layout="centered")
+st.set_page_config(page_title="Groq RAG Chatbot", layout="centered")
 
-st.title("📚 RAG-based Chatbot")
+st.title("⚡ Groq RAG-based Chatbot")
 
-# Load data
+# Load & embed data
 @st.cache_resource
 def load_vectorstore():
     with open("data/documents.txt", "r", encoding="utf-8") as f:
@@ -20,6 +22,7 @@ def load_vectorstore():
         chunk_size=500,
         chunk_overlap=50
     )
+
     docs = splitter.create_documents([text])
 
     embeddings = HuggingFaceEmbeddings(
@@ -31,8 +34,12 @@ def load_vectorstore():
 
 vectorstore = load_vectorstore()
 
-# LLM
-llm = OpenAI(temperature=0)
+# Groq LLM
+llm = ChatGroq(
+    api_key=os.getenv("GROQ_API_KEY"),
+    model_name="llama3-8b-8192",
+    temperature=0
+)
 
 qa_chain = RetrievalQA.from_chain_type(
     llm=llm,
@@ -45,5 +52,5 @@ query = st.text_input("Ask something from your data:")
 
 if query:
     with st.spinner("Thinking..."):
-        response = qa_chain.run(query)
-        st.success(response)
+        answer = qa_chain.run(query)
+        st.success(answer)
