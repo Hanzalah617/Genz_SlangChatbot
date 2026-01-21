@@ -1,0 +1,302 @@
+﻿record_id,timestamp,slang_term,term_category,term_meaning,origin_platform,usage_platform,region,user_id,user_age_group,usage_context,lifecycle_phase,intensity_score,sentiment,sentiment_score,ironic_usage,likes,shares,comments,virality_score,is_viral,days_since_emergence
+0,01/01/2020 1:23,simp,insult,someone overly devoted to another person,Reddit,Twitter,California,user_019223,25-30,food_related,growing,0.603,negative,-0.74,FALSE,18,2,5,0.004,FALSE,153
+1,01/01/2020 3:21,simp,insult,someone overly devoted to another person,Reddit,Twitter,Texas,user_497341,13-17,food_related,growing,0.603,negative,-0.978,FALSE,24,1,2,0.004,FALSE,153
+2,01/01/2020 5:31,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Canada,user_323563,31-40,casual_conversation,growing,0.552,positive,0.384,FALSE,121,1,0,0.013,FALSE,92
+3,01/01/2020 5:35,no cap,emphasis,"no lie, for real",Twitter,Twitter,Arizona,user_244857,18-24,gaming,growing,0.551,neutral,0.167,FALSE,47,2,1,0.006,FALSE,214
+4,01/01/2020 6:39,no cap,emphasis,"no lie, for real",Twitter,Instagram,Arizona,user_421848,13-17,compliment,growing,0.551,positive,0.874,FALSE,18,0,14,0.006,FALSE,214
+5,01/01/2020 6:51,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Germany,user_456630,18-24,work_school,growing,0.552,positive,0.925,TRUE,144,1,8,0.017,FALSE,92
+6,01/01/2020 6:54,vibe check,social,checking someone's mood/energy,TikTok,Instagram,Michigan,user_400259,13-17,reaction,growing,0.552,negative,-0.417,FALSE,149,2,5,0.017,FALSE,92
+7,01/01/2020 7:13,hits different,emotion,affects you in a unique way,Twitter,Twitter,Texas,user_198862,25-30,fashion_beauty,growing,0.28,negative,-0.822,TRUE,2,0,5,0.002,FALSE,61
+8,01/01/2020 7:18,bussin,approval,"really good, especially food",TikTok,YouTube,California,user_044389,18-24,reaction,growing,0.1,positive,0.696,FALSE,18,0,0,0.002,FALSE,0
+9,01/01/2020 7:40,no cap,emphasis,"no lie, for real",Twitter,Twitter,New York,user_233854,31-40,work_school,growing,0.551,positive,0.305,FALSE,3,1,2,0.001,FALSE,214
+10,01/01/2020 7:40,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Texas,user_045433,18-24,humor,growing,0.552,neutral,-0.04,FALSE,126,1,1,0.013,FALSE,92
+11,01/01/2020 8:13,slaps,approval,"really good, especially music",Reddit,Twitter,California,user_475690,13-17,commenting,growing,0.954,positive,0.975,FALSE,37,1,2,0.005,FALSE,579
+12,01/01/2020 8:15,periodt,emphasis,"end of discussion, period",Twitter,Instagram,Florida,user_187850,13-17,meme_reference,growing,0.823,positive,0.912,FALSE,270,2,0,0.028,FALSE,245
+13,01/01/2020 8:15,vibe check,social,checking someone's mood/energy,TikTok,Instagram,UK,user_312021,13-17,storytelling,growing,0.552,negative,-0.511,FALSE,123,1,5,0.014,FALSE,92
+14,01/01/2020 8:30,slaps,approval,"really good, especially music",Reddit,Reddit,Texas,user_323180,18-24,celebrity_gossip,growing,0.954,positive,0.823,FALSE,20,7,1,0.006,FALSE,579
+15,01/01/2020 8:31,slaps,approval,"really good, especially music",Reddit,Twitter,New York,user_101160,13-17,dating_context,growing,0.954,positive,0.427,FALSE,3,2,3,0.002,FALSE,579
+16,01/01/2020 8:38,vibe check,social,checking someone's mood/energy,TikTok,Twitch,Brazil,user_209937,25-30,storytelling,growing,0.552,positive,0.303,FALSE,17,1,0,0.002,FALSE,92
+17,01/01/2020 8:45,periodt,emphasis,"end of discussion, period",Twitter,Instagram,Georgia,user_207873,31-40,compliment,growing,0.823,positive,0.443,FALSE,19,0,0,0.002,FALSE,245
+18,01/01/2020 9:37,no cap,emphasis,"no lie, for real",Twitter,Twitter,Texas,user_243029,25-30,news_reaction,growing,0.551,positive,0.631,TRUE,29,2,6,0.006,FALSE,214
+19,01/01/2020 9:39,slaps,approval,"really good, especially music",Reddit,YouTube,UK,user_275103,13-17,food_related,growing,0.954,positive,0.477,FALSE,79,5,22,0.017,FALSE,579
+20,01/01/2020 9:40,simp,insult,someone overly devoted to another person,Reddit,TikTok,Florida,user_340962,25-30,commenting,growing,0.603,negative,-0.7,FALSE,6,11,7,0.008,FALSE,153
+21,01/01/2020 9:43,hits different,emotion,affects you in a unique way,Twitter,Twitter,India,user_295339,18-24,fashion_beauty,growing,0.28,negative,-0.795,FALSE,10,0,0,0.001,FALSE,61
+22,01/01/2020 10:11,periodt,emphasis,"end of discussion, period",Twitter,Twitter,UK,user_020827,41+,storytelling,growing,0.823,neutral,-0.101,FALSE,10,1,0,0.002,FALSE,245
+23,01/01/2020 10:42,no cap,emphasis,"no lie, for real",Twitter,Twitter,Georgia,user_470589,13-17,food_related,growing,0.551,positive,0.958,FALSE,51,0,3,0.006,FALSE,214
+24,01/01/2020 10:50,periodt,emphasis,"end of discussion, period",Twitter,TikTok,UK,user_284009,18-24,food_related,growing,0.823,positive,0.74,FALSE,9,2,17,0.007,FALSE,245
+25,01/01/2020 11:13,vibe check,social,checking someone's mood/energy,TikTok,TikTok,California,user_357394,31-40,self_description,growing,0.552,negative,-0.763,FALSE,11,0,2,0.002,FALSE,92
+26,01/01/2020 11:16,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Washington,user_034679,13-17,dating_context,growing,0.552,positive,0.328,FALSE,64,0,7,0.009,FALSE,92
+27,01/01/2020 11:18,periodt,emphasis,"end of discussion, period",Twitter,Reddit,Illinois,user_128162,13-17,dating_context,growing,0.823,positive,0.453,FALSE,160,1,3,0.017,FALSE,245
+28,01/01/2020 11:27,no cap,emphasis,"no lie, for real",Twitter,Twitter,Australia,user_358517,31-40,music_discussion,growing,0.551,positive,0.884,FALSE,1,2,1,0.001,FALSE,214
+29,01/01/2020 12:18,slaps,approval,"really good, especially music",Reddit,Instagram,UK,user_113933,25-30,music_discussion,growing,0.954,positive,0.919,FALSE,49,5,18,0.013,FALSE,579
+30,01/01/2020 12:35,periodt,emphasis,"end of discussion, period",Twitter,TikTok,New York,user_455946,31-40,celebrity_gossip,growing,0.823,negative,-0.392,FALSE,21,0,2,0.003,FALSE,245
+31,01/01/2020 12:36,vibe check,social,checking someone's mood/energy,TikTok,TikTok,South Africa,user_152348,13-17,work_school,growing,0.552,neutral,-0.234,FALSE,79,19,49,0.032,FALSE,92
+32,01/01/2020 12:45,simp,insult,someone overly devoted to another person,Reddit,Reddit,Washington,user_452860,18-24,food_related,growing,0.603,neutral,0.221,FALSE,55,2,6,0.008,FALSE,153
+33,01/01/2020 12:52,vibe check,social,checking someone's mood/energy,TikTok,Reddit,California,user_029862,25-30,criticism,growing,0.552,neutral,0.128,FALSE,9,1,2,0.002,FALSE,92
+34,01/01/2020 12:54,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Philippines,user_207710,31-40,commenting,growing,0.823,positive,0.309,FALSE,17,2,5,0.004,FALSE,245
+35,01/01/2020 12:56,slaps,approval,"really good, especially music",Reddit,TikTok,Brazil,user_198239,31-40,reaction,growing,0.954,negative,-0.519,FALSE,49,3,23,0.013,FALSE,579
+36,01/01/2020 13:02,no cap,emphasis,"no lie, for real",Twitter,Twitter,Georgia,user_085822,13-17,self_description,growing,0.551,positive,0.761,FALSE,17,0,6,0.004,FALSE,214
+37,01/01/2020 13:08,hits different,emotion,affects you in a unique way,Twitter,Reddit,South Africa,user_330244,18-24,commenting,growing,0.28,positive,0.558,FALSE,23,2,0,0.003,FALSE,61
+38,01/01/2020 13:10,hits different,emotion,affects you in a unique way,Twitter,TikTok,California,user_086159,18-24,reaction,growing,0.28,positive,0.761,FALSE,22,2,8,0.006,FALSE,61
+39,01/01/2020 13:13,no cap,emphasis,"no lie, for real",Twitter,TikTok,Philippines,user_207286,25-30,food_related,growing,0.551,neutral,-0.028,FALSE,72,10,1,0.013,FALSE,214
+40,01/01/2020 13:31,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Pennsylvania,user_093844,25-30,celebrity_gossip,growing,0.552,positive,0.359,FALSE,41,2,0,0.005,FALSE,92
+41,01/01/2020 13:39,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Michigan,user_302567,18-24,compliment,growing,0.823,negative,-0.975,TRUE,5,4,4,0.004,FALSE,245
+42,01/01/2020 13:40,no cap,emphasis,"no lie, for real",Twitter,Twitter,Florida,user_295016,18-24,self_description,growing,0.551,positive,0.948,FALSE,41,1,2,0.005,FALSE,214
+43,01/01/2020 13:41,slaps,approval,"really good, especially music",Reddit,TikTok,Georgia,user_084203,18-24,music_discussion,growing,0.954,positive,0.68,FALSE,131,10,5,0.02,FALSE,579
+44,01/01/2020 13:42,slaps,approval,"really good, especially music",Reddit,Twitter,Germany,user_446585,13-17,casual_conversation,growing,0.954,neutral,-0.183,TRUE,73,15,9,0.017,FALSE,579
+45,01/01/2020 13:48,no cap,emphasis,"no lie, for real",Twitter,Twitter,Georgia,user_320138,18-24,fashion_beauty,growing,0.551,positive,0.636,FALSE,6,0,4,0.002,FALSE,214
+46,01/01/2020 13:59,periodt,emphasis,"end of discussion, period",Twitter,Instagram,Florida,user_268745,25-30,meme_reference,growing,0.823,positive,0.52,FALSE,19,1,8,0.005,FALSE,245
+47,01/01/2020 14:07,bussin,approval,"really good, especially food",TikTok,TikTok,California,user_038419,31-40,food_related,growing,0.1,positive,0.815,FALSE,6,0,0,0.001,FALSE,0
+48,01/01/2020 14:49,no cap,emphasis,"no lie, for real",Twitter,Twitter,California,user_057547,18-24,fashion_beauty,growing,0.551,positive,0.979,FALSE,37,2,2,0.005,FALSE,214
+49,01/01/2020 15:02,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Washington,user_477344,18-24,humor,growing,0.552,positive,0.443,FALSE,29,3,2,0.005,FALSE,92
+50,01/01/2020 15:04,periodt,emphasis,"end of discussion, period",Twitter,Twitter,California,user_437602,18-24,meme_reference,growing,0.823,positive,0.403,FALSE,96,0,3,0.011,FALSE,245
+51,01/01/2020 15:09,no cap,emphasis,"no lie, for real",Twitter,Twitter,Florida,user_409804,18-24,work_school,growing,0.551,neutral,-0.131,FALSE,37,1,4,0.005,FALSE,214
+52,01/01/2020 15:16,simp,insult,someone overly devoted to another person,Reddit,Reddit,New York,user_093767,13-17,storytelling,growing,0.603,negative,-0.638,FALSE,24,6,0,0.005,FALSE,153
+53,01/01/2020 15:20,periodt,emphasis,"end of discussion, period",Twitter,TikTok,New York,user_123673,18-24,music_discussion,growing,0.823,negative,-0.322,FALSE,22,6,7,0.007,FALSE,245
+54,01/01/2020 15:26,periodt,emphasis,"end of discussion, period",Twitter,Reddit,New York,user_181896,18-24,reaction,growing,0.823,neutral,-0.033,FALSE,8,4,21,0.009,FALSE,245
+55,01/01/2020 15:30,vibe check,social,checking someone's mood/energy,TikTok,TikTok,New York,user_450640,18-24,criticism,growing,0.552,negative,-0.979,FALSE,8,0,6,0.003,FALSE,92
+56,01/01/2020 16:23,simp,insult,someone overly devoted to another person,Reddit,Reddit,New York,user_296774,41+,self_description,growing,0.603,negative,-0.999,FALSE,2,0,0,0,FALSE,153
+57,01/01/2020 16:35,periodt,emphasis,"end of discussion, period",Twitter,Twitter,South Africa,user_460380,18-24,dating_context,growing,0.823,positive,0.398,FALSE,19,2,20,0.009,FALSE,245
+58,01/01/2020 16:52,hits different,emotion,affects you in a unique way,Twitter,TikTok,Australia,user_285888,13-17,criticism,growing,0.28,positive,0.501,FALSE,65,3,7,0.01,FALSE,61
+59,01/01/2020 16:53,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Michigan,user_301532,13-17,news_reaction,growing,0.552,neutral,-0.084,FALSE,8,2,8,0.004,FALSE,92
+60,01/01/2020 17:21,no cap,emphasis,"no lie, for real",Twitter,Twitter,UK,user_271918,25-30,commenting,growing,0.551,neutral,0.008,FALSE,2,0,6,0.002,FALSE,214
+61,01/01/2020 17:37,simp,insult,someone overly devoted to another person,Reddit,Reddit,Australia,user_166306,18-24,food_related,growing,0.603,negative,-0.564,FALSE,7,1,1,0.002,FALSE,153
+62,01/01/2020 17:39,simp,insult,someone overly devoted to another person,Reddit,Reddit,California,user_230035,25-30,storytelling,growing,0.603,positive,0.564,FALSE,44,0,0,0.004,FALSE,153
+63,01/01/2020 17:53,slaps,approval,"really good, especially music",Reddit,Reddit,India,user_072707,18-24,gaming,growing,0.954,positive,0.388,FALSE,40,1,6,0.006,FALSE,579
+64,01/01/2020 17:56,slaps,approval,"really good, especially music",Reddit,Instagram,Florida,user_419824,31-40,dating_context,growing,0.954,positive,0.727,FALSE,185,4,3,0.021,FALSE,579
+65,01/01/2020 18:01,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Texas,user_220878,25-30,criticism,growing,0.552,positive,0.335,FALSE,19,1,12,0.006,FALSE,92
+66,01/01/2020 18:15,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Texas,user_219631,13-17,meme_reference,growing,0.823,neutral,0.1,FALSE,151,7,7,0.021,FALSE,245
+67,01/01/2020 18:30,periodt,emphasis,"end of discussion, period",Twitter,Instagram,New York,user_405446,25-30,gaming,growing,0.823,negative,-0.8,FALSE,80,0,14,0.012,FALSE,245
+68,01/01/2020 18:31,hits different,emotion,affects you in a unique way,Twitter,Twitter,Australia,user_054298,18-24,celebrity_gossip,growing,0.28,positive,0.416,FALSE,26,1,0,0.003,FALSE,61
+69,01/01/2020 18:46,periodt,emphasis,"end of discussion, period",Twitter,Twitter,South Africa,user_216605,25-30,humor,growing,0.823,positive,0.335,FALSE,41,3,0,0.006,FALSE,245
+70,01/01/2020 19:10,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Georgia,user_006980,13-17,casual_conversation,growing,0.552,positive,0.34,FALSE,19,4,12,0.008,FALSE,92
+71,01/01/2020 19:16,hits different,emotion,affects you in a unique way,Twitter,Twitter,Texas,user_284826,13-17,news_reaction,growing,0.28,neutral,0.074,FALSE,3,3,0,0.002,FALSE,61
+72,01/01/2020 19:23,slaps,approval,"really good, especially music",Reddit,Instagram,Ohio,user_069254,13-17,casual_conversation,growing,0.954,positive,0.601,TRUE,35,2,26,0.012,FALSE,579
+73,01/01/2020 19:24,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Canada,user_237757,25-30,fashion_beauty,growing,0.823,neutral,-0.205,FALSE,52,2,4,0.007,FALSE,245
+74,01/01/2020 19:26,simp,insult,someone overly devoted to another person,Reddit,Twitter,Germany,user_346440,13-17,music_discussion,growing,0.603,negative,-0.964,FALSE,8,0,3,0.002,FALSE,153
+75,01/01/2020 19:32,slaps,approval,"really good, especially music",Reddit,Reddit,Michigan,user_237513,13-17,casual_conversation,growing,0.954,positive,0.603,FALSE,26,2,2,0.004,FALSE,579
+76,01/01/2020 19:41,simp,insult,someone overly devoted to another person,Reddit,Twitter,Ohio,user_019122,25-30,celebrity_gossip,growing,0.603,negative,-0.385,TRUE,16,4,8,0.006,FALSE,153
+77,01/01/2020 19:45,periodt,emphasis,"end of discussion, period",Twitter,Instagram,India,user_324947,18-24,compliment,growing,0.823,neutral,-0.114,FALSE,94,0,0,0.009,FALSE,245
+78,01/01/2020 20:05,vibe check,social,checking someone's mood/energy,TikTok,Twitter,UK,user_339415,13-17,work_school,growing,0.552,neutral,0.193,FALSE,7,0,3,0.002,FALSE,92
+79,01/01/2020 20:15,hits different,emotion,affects you in a unique way,Twitter,Twitter,California,user_376529,25-30,reaction,growing,0.28,positive,0.941,FALSE,1,2,3,0.002,FALSE,61
+80,01/01/2020 20:43,periodt,emphasis,"end of discussion, period",Twitter,Twitter,California,user_301784,25-30,gaming,growing,0.823,neutral,-0.086,FALSE,9,0,8,0.003,FALSE,245
+81,01/01/2020 20:43,periodt,emphasis,"end of discussion, period",Twitter,Twitter,California,user_108396,18-24,casual_conversation,growing,0.823,neutral,-0.065,FALSE,14,0,11,0.005,FALSE,245
+82,01/01/2020 20:50,periodt,emphasis,"end of discussion, period",Twitter,TikTok,Ohio,user_493764,13-17,humor,growing,0.823,neutral,-0.255,FALSE,41,1,17,0.01,FALSE,245
+83,01/01/2020 21:04,no cap,emphasis,"no lie, for real",Twitter,YouTube,Arizona,user_070378,25-30,storytelling,growing,0.551,positive,0.774,TRUE,7,3,3,0.003,FALSE,214
+84,01/01/2020 21:09,no cap,emphasis,"no lie, for real",Twitter,TikTok,Nigeria,user_402758,13-17,gaming,growing,0.551,neutral,-0.146,FALSE,98,16,26,0.026,FALSE,214
+85,01/01/2020 21:18,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Georgia,user_005234,18-24,meme_reference,growing,0.552,negative,-0.359,TRUE,45,0,19,0.01,FALSE,92
+86,01/01/2020 21:19,slaps,approval,"really good, especially music",Reddit,Reddit,Colorado,user_038263,13-17,self_description,growing,0.954,positive,0.747,FALSE,19,1,0,0.002,FALSE,579
+87,01/01/2020 21:30,hits different,emotion,affects you in a unique way,Twitter,YouTube,India,user_037303,31-40,commenting,growing,0.28,negative,-0.719,FALSE,0,0,0,0,FALSE,61
+88,01/01/2020 21:33,no cap,emphasis,"no lie, for real",Twitter,TikTok,Canada,user_458842,25-30,humor,growing,0.551,positive,0.357,FALSE,25,4,3,0.005,FALSE,214
+89,01/01/2020 21:36,slaps,approval,"really good, especially music",Reddit,Reddit,Washington,user_190040,18-24,food_related,growing,0.954,negative,-0.737,FALSE,62,1,4,0.008,FALSE,579
+90,01/01/2020 21:40,vibe check,social,checking someone's mood/energy,TikTok,Twitter,New York,user_268550,13-17,food_related,growing,0.552,neutral,0.006,TRUE,1,0,0,0,FALSE,92
+91,01/01/2020 21:53,slaps,approval,"really good, especially music",Reddit,TikTok,Colorado,user_109114,25-30,music_discussion,growing,0.954,positive,0.926,FALSE,151,1,10,0.019,FALSE,579
+92,01/01/2020 22:02,no cap,emphasis,"no lie, for real",Twitter,YouTube,New York,user_109807,18-24,dating_context,growing,0.551,neutral,0.283,FALSE,82,3,8,0.012,FALSE,214
+93,01/01/2020 22:39,simp,insult,someone overly devoted to another person,Reddit,Instagram,Colorado,user_380172,18-24,fashion_beauty,growing,0.603,neutral,-0.279,FALSE,4,2,8,0.004,FALSE,153
+94,01/01/2020 23:21,periodt,emphasis,"end of discussion, period",Twitter,Twitter,India,user_171496,18-24,fashion_beauty,growing,0.823,neutral,0.223,FALSE,31,1,14,0.008,FALSE,245
+95,02/01/2020 4:28,no cap,emphasis,"no lie, for real",Twitter,YouTube,Florida,user_351892,18-24,news_reaction,growing,0.553,positive,0.557,FALSE,12,1,3,0.003,FALSE,215
+96,02/01/2020 4:49,hits different,emotion,affects you in a unique way,Twitter,Twitter,Ohio,user_234024,18-24,reaction,growing,0.283,neutral,-0.266,FALSE,0,1,1,0.001,FALSE,62
+97,02/01/2020 5:44,vibe check,social,checking someone's mood/energy,TikTok,TikTok,UK,user_259159,18-24,gaming,growing,0.557,negative,-0.878,FALSE,3,1,12,0.004,FALSE,93
+98,02/01/2020 6:03,slaps,approval,"really good, especially music",Reddit,Twitter,Texas,user_414981,13-17,music_discussion,growing,0.956,positive,0.897,FALSE,13,4,11,0.007,FALSE,580
+99,02/01/2020 6:14,bussin,approval,"really good, especially food",TikTok,TikTok,California,user_306288,13-17,news_reaction,growing,0.102,negative,-0.458,FALSE,1,0,0,0,FALSE,1
+100,02/01/2020 6:41,slaps,approval,"really good, especially music",Reddit,Reddit,Nigeria,user_073164,25-30,casual_conversation,growing,0.956,positive,0.307,FALSE,109,2,1,0.012,FALSE,580
+101,02/01/2020 7:15,hits different,emotion,affects you in a unique way,Twitter,Twitter,Georgia,user_351386,13-17,celebrity_gossip,growing,0.283,positive,0.596,FALSE,0,0,0,0,FALSE,62
+102,02/01/2020 7:16,simp,insult,someone overly devoted to another person,Reddit,Instagram,South Africa,user_243162,18-24,reaction,growing,0.606,negative,-0.713,FALSE,11,4,13,0.007,FALSE,154
+103,02/01/2020 7:48,simp,insult,someone overly devoted to another person,Reddit,TikTok,Canada,user_302309,25-30,fashion_beauty,growing,0.606,negative,-0.948,FALSE,79,4,5,0.011,FALSE,154
+104,02/01/2020 8:14,slaps,approval,"really good, especially music",Reddit,Reddit,Georgia,user_474061,18-24,news_reaction,growing,0.956,positive,0.927,FALSE,41,4,5,0.008,FALSE,580
+105,02/01/2020 8:21,simp,insult,someone overly devoted to another person,Reddit,TikTok,Canada,user_440310,31-40,reaction,growing,0.606,neutral,-0.224,FALSE,18,0,23,0.009,FALSE,154
+106,02/01/2020 8:23,hits different,emotion,affects you in a unique way,Twitter,TikTok,Georgia,user_411461,25-30,storytelling,growing,0.283,positive,0.806,FALSE,27,1,3,0.004,FALSE,62
+107,02/01/2020 8:38,hits different,emotion,affects you in a unique way,Twitter,Twitter,UK,user_472850,41+,commenting,growing,0.283,positive,0.872,TRUE,2,0,0,0,FALSE,62
+108,02/01/2020 8:42,slaps,approval,"really good, especially music",Reddit,Reddit,California,user_462988,18-24,work_school,growing,0.956,positive,0.448,FALSE,84,3,0,0.01,FALSE,580
+109,02/01/2020 9:02,slaps,approval,"really good, especially music",Reddit,Reddit,Illinois,user_158381,18-24,commenting,growing,0.956,positive,0.619,FALSE,85,2,0,0.01,FALSE,580
+110,02/01/2020 9:10,vibe check,social,checking someone's mood/energy,TikTok,Instagram,California,user_359978,13-17,casual_conversation,growing,0.557,neutral,0.01,FALSE,42,9,2,0.009,FALSE,93
+111,02/01/2020 9:48,hits different,emotion,affects you in a unique way,Twitter,Instagram,Texas,user_396068,13-17,music_discussion,growing,0.283,negative,-0.523,FALSE,54,0,7,0.007,FALSE,62
+112,02/01/2020 10:02,simp,insult,someone overly devoted to another person,Reddit,Instagram,New York,user_436251,25-30,dating_context,growing,0.606,neutral,-0.18,FALSE,51,2,10,0.009,FALSE,154
+113,02/01/2020 10:08,hits different,emotion,affects you in a unique way,Twitter,Reddit,Michigan,user_423083,13-17,dating_context,growing,0.283,neutral,-0.142,TRUE,1,0,1,0,FALSE,62
+114,02/01/2020 10:26,no cap,emphasis,"no lie, for real",Twitter,Twitter,Florida,user_103806,18-24,casual_conversation,growing,0.553,negative,-0.859,FALSE,81,2,1,0.009,FALSE,215
+115,02/01/2020 10:34,simp,insult,someone overly devoted to another person,Reddit,Reddit,Illinois,user_152923,18-24,commenting,growing,0.606,neutral,0.043,FALSE,0,1,1,0.001,FALSE,154
+116,02/01/2020 10:41,no cap,emphasis,"no lie, for real",Twitter,Twitter,Colorado,user_000211,25-30,dating_context,growing,0.553,neutral,0.035,FALSE,15,3,0,0.003,FALSE,215
+117,02/01/2020 11:16,vibe check,social,checking someone's mood/energy,TikTok,Twitch,Texas,user_109881,25-30,reaction,growing,0.557,positive,0.976,TRUE,40,0,1,0.004,FALSE,93
+118,02/01/2020 11:19,simp,insult,someone overly devoted to another person,Reddit,Twitter,Texas,user_035359,41+,commenting,growing,0.606,negative,-0.504,FALSE,7,0,0,0.001,FALSE,154
+119,02/01/2020 11:39,simp,insult,someone overly devoted to another person,Reddit,TikTok,Illinois,user_309324,13-17,work_school,growing,0.606,negative,-0.642,FALSE,240,2,14,0.029,FALSE,154
+120,02/01/2020 11:50,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Illinois,user_291575,13-17,humor,growing,0.826,negative,-0.936,FALSE,104,3,1,0.012,FALSE,246
+121,02/01/2020 12:12,no cap,emphasis,"no lie, for real",Twitter,Twitter,Michigan,user_105783,18-24,dating_context,growing,0.553,positive,0.672,FALSE,87,0,10,0.012,FALSE,215
+122,02/01/2020 12:25,hits different,emotion,affects you in a unique way,Twitter,TikTok,New York,user_059382,18-24,humor,growing,0.283,positive,0.903,FALSE,5,1,2,0.002,FALSE,62
+123,02/01/2020 13:15,slaps,approval,"really good, especially music",Reddit,TikTok,Brazil,user_420820,18-24,casual_conversation,growing,0.956,positive,0.31,FALSE,155,9,37,0.031,FALSE,580
+124,02/01/2020 13:19,slaps,approval,"really good, especially music",Reddit,TikTok,UK,user_392942,25-30,work_school,growing,0.956,positive,0.954,FALSE,100,11,44,0.029,FALSE,580
+125,02/01/2020 13:39,no cap,emphasis,"no lie, for real",Twitter,Twitter,Philippines,user_112510,31-40,reaction,growing,0.553,positive,0.319,FALSE,0,0,0,0,FALSE,215
+126,02/01/2020 13:41,periodt,emphasis,"end of discussion, period",Twitter,Instagram,Colorado,user_169632,18-24,casual_conversation,growing,0.826,neutral,-0.135,FALSE,12,4,2,0.004,FALSE,246
+127,02/01/2020 14:27,simp,insult,someone overly devoted to another person,Reddit,Reddit,South Africa,user_011175,13-17,dating_context,growing,0.606,negative,-0.863,FALSE,4,4,2,0.003,FALSE,154
+128,02/01/2020 14:31,simp,insult,someone overly devoted to another person,Reddit,Reddit,UK,user_139067,18-24,self_description,growing,0.606,negative,-0.781,FALSE,19,1,6,0.004,FALSE,154
+129,02/01/2020 14:35,no cap,emphasis,"no lie, for real",Twitter,TikTok,Pennsylvania,user_133287,25-30,commenting,growing,0.553,positive,0.969,FALSE,19,14,21,0.015,FALSE,215
+130,02/01/2020 14:38,bussin,approval,"really good, especially food",TikTok,TikTok,Michigan,user_424365,25-30,humor,growing,0.102,positive,0.887,FALSE,20,0,4,0.003,FALSE,1
+131,02/01/2020 14:58,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Florida,user_086890,13-17,work_school,growing,0.557,neutral,-0.235,FALSE,13,21,4,0.013,FALSE,93
+132,02/01/2020 15:03,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Colorado,user_210164,18-24,work_school,growing,0.557,positive,0.822,FALSE,71,2,7,0.01,FALSE,93
+133,02/01/2020 15:05,slaps,approval,"really good, especially music",Reddit,Instagram,UK,user_322694,25-30,self_description,growing,0.956,positive,0.649,FALSE,74,4,7,0.012,FALSE,580
+134,02/01/2020 15:23,slaps,approval,"really good, especially music",Reddit,Reddit,California,user_417888,25-30,reaction,growing,0.956,negative,-0.535,FALSE,7,0,3,0.002,FALSE,580
+135,02/01/2020 15:30,no cap,emphasis,"no lie, for real",Twitter,Instagram,Philippines,user_065880,13-17,gaming,growing,0.553,positive,0.901,FALSE,49,1,1,0.006,FALSE,215
+136,02/01/2020 15:54,no cap,emphasis,"no lie, for real",Twitter,Instagram,California,user_124004,13-17,dating_context,growing,0.553,positive,0.355,TRUE,53,3,3,0.008,FALSE,215
+137,02/01/2020 16:06,simp,insult,someone overly devoted to another person,Reddit,Reddit,Texas,user_152426,18-24,gaming,growing,0.606,negative,-0.794,FALSE,56,2,0,0.007,FALSE,154
+138,02/01/2020 16:23,slaps,approval,"really good, especially music",Reddit,TikTok,California,user_138184,18-24,celebrity_gossip,growing,0.956,positive,0.697,FALSE,299,0,13,0.034,FALSE,580
+139,02/01/2020 16:53,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Philippines,user_008313,13-17,self_description,growing,0.557,neutral,0.029,FALSE,172,14,35,0.035,FALSE,93
+140,02/01/2020 17:00,slaps,approval,"really good, especially music",Reddit,Reddit,Florida,user_153124,25-30,compliment,growing,0.956,positive,0.466,FALSE,2,2,7,0.003,FALSE,580
+141,02/01/2020 17:08,slaps,approval,"really good, especially music",Reddit,TikTok,Illinois,user_324464,13-17,reaction,growing,0.956,positive,0.372,FALSE,11,1,3,0.003,FALSE,580
+142,02/01/2020 17:11,vibe check,social,checking someone's mood/energy,TikTok,TikTok,New York,user_018134,31-40,compliment,growing,0.557,negative,-0.902,FALSE,60,0,3,0.007,FALSE,93
+143,02/01/2020 17:12,vibe check,social,checking someone's mood/energy,TikTok,Reddit,Illinois,user_132137,13-17,work_school,growing,0.557,positive,0.848,FALSE,114,3,1,0.013,FALSE,93
+144,02/01/2020 17:15,bussin,approval,"really good, especially food",TikTok,Twitter,Pennsylvania,user_183715,41+,food_related,growing,0.102,positive,0.738,FALSE,0,0,0,0,FALSE,1
+145,02/01/2020 17:20,no cap,emphasis,"no lie, for real",Twitter,Twitter,California,user_498473,31-40,compliment,growing,0.553,positive,0.805,FALSE,17,2,4,0.004,FALSE,215
+146,02/01/2020 17:23,vibe check,social,checking someone's mood/energy,TikTok,TikTok,South Africa,user_412759,18-24,gaming,growing,0.557,positive,0.946,FALSE,12,0,1,0.002,FALSE,93
+147,02/01/2020 17:30,simp,insult,someone overly devoted to another person,Reddit,TikTok,Pennsylvania,user_200318,18-24,storytelling,growing,0.606,neutral,0.009,FALSE,474,7,0,0.051,FALSE,154
+148,02/01/2020 17:46,slaps,approval,"really good, especially music",Reddit,Reddit,Australia,user_117205,41+,humor,growing,0.956,positive,0.71,FALSE,13,0,2,0.002,FALSE,580
+149,02/01/2020 17:56,hits different,emotion,affects you in a unique way,Twitter,Twitter,Florida,user_006930,18-24,gaming,growing,0.283,positive,0.75,FALSE,3,0,1,0.001,FALSE,62
+150,02/01/2020 18:01,periodt,emphasis,"end of discussion, period",Twitter,Reddit,Brazil,user_081772,13-17,casual_conversation,growing,0.826,neutral,0.094,FALSE,5,0,16,0.005,FALSE,246
+151,02/01/2020 18:19,no cap,emphasis,"no lie, for real",Twitter,Twitter,Florida,user_381234,18-24,commenting,growing,0.553,neutral,0.243,FALSE,108,1,0,0.011,FALSE,215
+152,02/01/2020 18:40,periodt,emphasis,"end of discussion, period",Twitter,Twitch,New York,user_158590,13-17,fashion_beauty,growing,0.826,neutral,0.13,FALSE,69,2,0,0.008,FALSE,246
+153,02/01/2020 18:51,periodt,emphasis,"end of discussion, period",Twitter,TikTok,Illinois,user_142552,18-24,commenting,growing,0.826,neutral,0.169,FALSE,126,6,12,0.019,FALSE,246
+154,02/01/2020 18:54,hits different,emotion,affects you in a unique way,Twitter,Twitter,New York,user_030579,31-40,compliment,growing,0.283,neutral,0.284,FALSE,8,0,0,0.001,FALSE,62
+155,02/01/2020 18:59,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Canada,user_162353,25-30,gaming,growing,0.826,neutral,-0.117,FALSE,23,1,7,0.005,FALSE,246
+156,02/01/2020 19:03,simp,insult,someone overly devoted to another person,Reddit,Instagram,California,user_402290,18-24,commenting,growing,0.606,negative,-0.788,FALSE,69,7,4,0.012,FALSE,154
+157,02/01/2020 19:13,periodt,emphasis,"end of discussion, period",Twitter,YouTube,Texas,user_141023,25-30,criticism,growing,0.826,positive,0.894,FALSE,5,0,4,0.002,FALSE,246
+158,02/01/2020 19:15,slaps,approval,"really good, especially music",Reddit,TikTok,Colorado,user_422765,25-30,celebrity_gossip,growing,0.956,positive,0.903,FALSE,12,6,34,0.014,FALSE,580
+159,02/01/2020 19:18,slaps,approval,"really good, especially music",Reddit,Twitter,California,user_431627,18-24,meme_reference,growing,0.956,positive,0.548,FALSE,318,0,0,0.032,FALSE,580
+160,02/01/2020 19:54,bussin,approval,"really good, especially food",TikTok,Twitter,California,user_423365,13-17,gaming,growing,0.102,neutral,-0.067,FALSE,1,0,1,0,FALSE,1
+161,02/01/2020 20:14,vibe check,social,checking someone's mood/energy,TikTok,TikTok,California,user_244431,18-24,meme_reference,growing,0.557,neutral,0.122,FALSE,101,4,6,0.014,FALSE,93
+162,02/01/2020 20:26,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Germany,user_334319,25-30,reaction,growing,0.826,positive,0.994,FALSE,26,0,8,0.005,FALSE,246
+163,02/01/2020 20:26,no cap,emphasis,"no lie, for real",Twitter,Twitter,California,user_397845,25-30,storytelling,growing,0.553,positive,0.432,FALSE,7,1,4,0.002,FALSE,215
+164,02/01/2020 21:00,simp,insult,someone overly devoted to another person,Reddit,Twitter,Ohio,user_208394,13-17,fashion_beauty,growing,0.606,neutral,-0.104,TRUE,4,2,0,0.001,FALSE,154
+165,02/01/2020 21:03,hits different,emotion,affects you in a unique way,Twitter,Twitter,Texas,user_010885,18-24,food_related,growing,0.283,neutral,0.229,FALSE,4,0,2,0.001,FALSE,62
+166,02/01/2020 21:03,simp,insult,someone overly devoted to another person,Reddit,Reddit,Pennsylvania,user_227925,25-30,reaction,growing,0.606,neutral,-0.244,FALSE,25,1,3,0.004,FALSE,154
+167,02/01/2020 21:13,vibe check,social,checking someone's mood/energy,TikTok,Instagram,Texas,user_107304,18-24,self_description,growing,0.557,positive,0.786,TRUE,23,4,4,0.005,FALSE,93
+168,02/01/2020 21:14,periodt,emphasis,"end of discussion, period",Twitter,TikTok,New York,user_122822,41+,humor,growing,0.826,positive,0.384,FALSE,2,0,0,0,FALSE,246
+169,02/01/2020 21:15,no cap,emphasis,"no lie, for real",Twitter,Twitch,Illinois,user_060453,18-24,commenting,growing,0.553,neutral,-0.139,FALSE,19,0,0,0.002,FALSE,215
+170,02/01/2020 21:16,vibe check,social,checking someone's mood/energy,TikTok,Reddit,California,user_096004,31-40,dating_context,growing,0.557,positive,0.662,FALSE,2,1,4,0.002,FALSE,93
+171,02/01/2020 21:26,vibe check,social,checking someone's mood/energy,TikTok,Instagram,Pennsylvania,user_007714,25-30,music_discussion,growing,0.557,positive,0.766,FALSE,65,2,0,0.007,FALSE,93
+172,02/01/2020 21:39,vibe check,social,checking someone's mood/energy,TikTok,Instagram,Texas,user_269782,18-24,criticism,growing,0.557,negative,-0.804,FALSE,52,3,0,0.007,FALSE,93
+173,02/01/2020 21:42,slaps,approval,"really good, especially music",Reddit,Reddit,Illinois,user_134910,25-30,storytelling,growing,0.956,positive,0.97,FALSE,12,3,0,0.003,FALSE,580
+174,02/01/2020 21:51,periodt,emphasis,"end of discussion, period",Twitter,Instagram,California,user_176985,31-40,storytelling,growing,0.826,neutral,0.015,FALSE,39,0,5,0.005,FALSE,246
+175,02/01/2020 21:52,hits different,emotion,affects you in a unique way,Twitter,TikTok,California,user_202251,31-40,storytelling,growing,0.283,neutral,0.19,FALSE,2,0,0,0,FALSE,62
+176,02/01/2020 22:02,periodt,emphasis,"end of discussion, period",Twitter,Instagram,Texas,user_490536,25-30,storytelling,growing,0.826,positive,0.351,FALSE,41,11,11,0.013,FALSE,246
+177,02/01/2020 22:12,slaps,approval,"really good, especially music",Reddit,Reddit,Texas,user_485929,13-17,reaction,growing,0.956,positive,0.337,FALSE,49,1,9,0.008,FALSE,580
+178,02/01/2020 22:29,vibe check,social,checking someone's mood/energy,TikTok,TikTok,California,user_160964,25-30,news_reaction,growing,0.557,neutral,-0.162,FALSE,51,6,9,0.011,FALSE,93
+179,02/01/2020 22:34,no cap,emphasis,"no lie, for real",Twitter,Twitter,UK,user_070636,25-30,music_discussion,growing,0.553,neutral,-0.029,FALSE,3,1,0,0.001,FALSE,215
+180,02/01/2020 23:30,no cap,emphasis,"no lie, for real",Twitter,Twitter,Washington,user_265777,13-17,casual_conversation,growing,0.553,positive,0.998,FALSE,33,2,2,0.005,FALSE,215
+181,02/01/2020 23:52,simp,insult,someone overly devoted to another person,Reddit,Twitter,Florida,user_061661,31-40,work_school,growing,0.606,negative,-0.69,FALSE,14,0,3,0.002,FALSE,154
+182,03/01/2020 4:03,slaps,approval,"really good, especially music",Reddit,Instagram,Colorado,user_465845,25-30,humor,growing,0.957,neutral,0.046,FALSE,12,12,3,0.008,FALSE,581
+183,03/01/2020 5:04,periodt,emphasis,"end of discussion, period",Twitter,Reddit,California,user_193394,13-17,celebrity_gossip,growing,0.829,positive,0.538,FALSE,116,4,2,0.014,FALSE,247
+184,03/01/2020 5:29,periodt,emphasis,"end of discussion, period",Twitter,Instagram,UK,user_380421,13-17,food_related,growing,0.829,negative,-0.387,TRUE,12,2,33,0.012,FALSE,247
+185,03/01/2020 5:40,vibe check,social,checking someone's mood/energy,TikTok,Instagram,UK,user_147879,25-30,fashion_beauty,growing,0.562,positive,0.768,FALSE,30,1,7,0.006,FALSE,94
+186,03/01/2020 6:21,vibe check,social,checking someone's mood/energy,TikTok,Twitter,Colorado,user_042461,13-17,compliment,growing,0.562,neutral,0.035,FALSE,1,2,5,0.003,FALSE,94
+187,03/01/2020 7:36,no cap,emphasis,"no lie, for real",Twitter,Twitter,Pennsylvania,user_074398,18-24,fashion_beauty,growing,0.555,positive,0.747,FALSE,30,0,1,0.003,FALSE,216
+188,03/01/2020 8:02,slaps,approval,"really good, especially music",Reddit,Reddit,UK,user_251964,41+,meme_reference,growing,0.957,positive,0.516,FALSE,3,0,7,0.002,FALSE,581
+189,03/01/2020 8:16,periodt,emphasis,"end of discussion, period",Twitter,Twitter,UK,user_158261,18-24,gaming,growing,0.829,negative,-0.488,FALSE,10,0,4,0.002,FALSE,247
+190,03/01/2020 8:23,slaps,approval,"really good, especially music",Reddit,Twitter,Texas,user_433741,31-40,gaming,growing,0.957,positive,0.858,FALSE,10,2,0,0.002,FALSE,581
+191,03/01/2020 8:24,slaps,approval,"really good, especially music",Reddit,Reddit,Texas,user_212381,41+,food_related,growing,0.957,positive,0.959,FALSE,3,0,3,0.001,FALSE,581
+192,03/01/2020 8:47,slaps,approval,"really good, especially music",Reddit,Twitter,Canada,user_120691,18-24,fashion_beauty,growing,0.957,positive,0.552,FALSE,260,0,4,0.027,FALSE,581
+193,03/01/2020 9:15,periodt,emphasis,"end of discussion, period",Twitter,Instagram,Brazil,user_285954,25-30,self_description,growing,0.829,positive,0.387,FALSE,36,4,12,0.009,FALSE,247
+194,03/01/2020 9:23,periodt,emphasis,"end of discussion, period",Twitter,Instagram,Philippines,user_252585,31-40,gaming,growing,0.829,neutral,0.134,FALSE,14,0,1,0.002,FALSE,247
+195,03/01/2020 9:23,vibe check,social,checking someone's mood/energy,TikTok,Twitch,South Africa,user_254373,41+,fashion_beauty,growing,0.562,neutral,0.098,FALSE,0,0,1,0,FALSE,94
+196,03/01/2020 9:31,slaps,approval,"really good, especially music",Reddit,Reddit,Arizona,user_203450,13-17,storytelling,growing,0.957,positive,0.578,FALSE,47,5,0,0.007,FALSE,581
+197,03/01/2020 9:37,slaps,approval,"really good, especially music",Reddit,TikTok,Australia,user_216429,25-30,storytelling,growing,0.957,positive,0.757,FALSE,45,15,2,0.013,FALSE,581
+198,03/01/2020 9:53,simp,insult,someone overly devoted to another person,Reddit,Instagram,Michigan,user_455562,13-17,commenting,growing,0.609,negative,-0.951,TRUE,55,3,38,0.018,FALSE,155
+199,03/01/2020 10:04,no cap,emphasis,"no lie, for real",Twitter,Twitter,Florida,user_044820,25-30,commenting,growing,0.555,neutral,0.037,FALSE,5,4,0,0.003,FALSE,216
+200,03/01/2020 10:16,no cap,emphasis,"no lie, for real",Twitter,Twitter,New York,user_448912,13-17,celebrity_gossip,growing,0.555,positive,0.697,FALSE,29,5,0,0.005,FALSE,216
+201,03/01/2020 10:44,slaps,approval,"really good, especially music",Reddit,Reddit,Australia,user_134959,31-40,fashion_beauty,growing,0.957,negative,-0.586,FALSE,29,0,7,0.005,FALSE,581
+202,03/01/2020 11:54,vibe check,social,checking someone's mood/energy,TikTok,YouTube,New York,user_297846,13-17,dating_context,growing,0.562,positive,0.559,TRUE,7,5,13,0.007,FALSE,94
+203,03/01/2020 11:59,periodt,emphasis,"end of discussion, period",Twitter,TikTok,California,user_448614,41+,news_reaction,growing,0.829,positive,0.796,FALSE,21,0,3,0.003,FALSE,247
+204,03/01/2020 12:07,simp,insult,someone overly devoted to another person,Reddit,TikTok,California,user_069941,18-24,music_discussion,growing,0.609,neutral,-0.18,FALSE,47,4,2,0.007,FALSE,155
+205,03/01/2020 12:27,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Illinois,user_461155,18-24,meme_reference,growing,0.829,neutral,-0.102,FALSE,4,4,10,0.005,FALSE,247
+206,03/01/2020 12:28,slaps,approval,"really good, especially music",Reddit,Reddit,India,user_398032,25-30,storytelling,growing,0.957,positive,0.61,FALSE,69,0,1,0.007,FALSE,581
+207,03/01/2020 12:29,no cap,emphasis,"no lie, for real",Twitter,Twitter,Arizona,user_022717,31-40,humor,growing,0.555,positive,0.741,FALSE,18,1,3,0.003,FALSE,216
+208,03/01/2020 12:31,hits different,emotion,affects you in a unique way,Twitter,Twitter,Michigan,user_251839,18-24,criticism,growing,0.286,positive,0.542,FALSE,5,0,2,0.001,FALSE,63
+209,03/01/2020 12:50,vibe check,social,checking someone's mood/energy,TikTok,Instagram,Nigeria,user_216560,25-30,criticism,growing,0.562,positive,0.369,FALSE,13,6,8,0.007,FALSE,94
+210,03/01/2020 12:59,hits different,emotion,affects you in a unique way,Twitter,TikTok,Georgia,user_093680,13-17,news_reaction,growing,0.286,negative,-0.819,FALSE,79,0,5,0.009,FALSE,63
+211,03/01/2020 13:14,vibe check,social,checking someone's mood/energy,TikTok,Twitter,California,user_435476,25-30,music_discussion,growing,0.562,neutral,0.216,FALSE,956,16,199,0.163,TRUE,94
+212,03/01/2020 13:47,periodt,emphasis,"end of discussion, period",Twitter,Twitter,South Africa,user_446167,13-17,news_reaction,growing,0.829,positive,0.643,FALSE,2,1,24,0.008,FALSE,247
+213,03/01/2020 13:57,simp,insult,someone overly devoted to another person,Reddit,Twitter,Brazil,user_074588,13-17,meme_reference,growing,0.609,negative,-0.961,FALSE,17,2,10,0.006,FALSE,155
+214,03/01/2020 14:02,periodt,emphasis,"end of discussion, period",Twitter,TikTok,Ohio,user_181795,18-24,dating_context,growing,0.829,positive,0.822,FALSE,138,0,7,0.016,FALSE,247
+215,03/01/2020 14:03,simp,insult,someone overly devoted to another person,Reddit,TikTok,Philippines,user_064315,18-24,music_discussion,growing,0.609,negative,-0.958,FALSE,37,8,22,0.014,FALSE,155
+216,03/01/2020 14:04,hits different,emotion,affects you in a unique way,Twitter,TikTok,Illinois,user_087178,25-30,meme_reference,growing,0.286,positive,0.488,FALSE,41,2,3,0.006,FALSE,63
+217,03/01/2020 14:09,simp,insult,someone overly devoted to another person,Reddit,Reddit,Ohio,user_222409,25-30,celebrity_gossip,growing,0.609,neutral,0.169,FALSE,11,0,0,0.001,FALSE,155
+218,03/01/2020 14:14,slaps,approval,"really good, especially music",Reddit,Reddit,California,user_194473,18-24,meme_reference,growing,0.957,positive,0.823,FALSE,71,0,0,0.007,FALSE,581
+219,03/01/2020 14:17,simp,insult,someone overly devoted to another person,Reddit,Instagram,Brazil,user_229981,18-24,self_description,growing,0.609,negative,-0.86,FALSE,8,0,9,0.004,FALSE,155
+220,03/01/2020 14:22,hits different,emotion,affects you in a unique way,Twitter,Twitter,Pennsylvania,user_417737,18-24,music_discussion,growing,0.286,positive,0.588,FALSE,31,1,2,0.004,FALSE,63
+221,03/01/2020 14:25,no cap,emphasis,"no lie, for real",Twitter,Twitter,UK,user_314344,25-30,food_related,growing,0.555,positive,0.941,FALSE,31,1,3,0.004,FALSE,216
+222,03/01/2020 14:43,hits different,emotion,affects you in a unique way,Twitter,Reddit,Pennsylvania,user_194943,41+,fashion_beauty,growing,0.286,positive,0.663,FALSE,3,0,0,0,FALSE,63
+223,03/01/2020 14:44,slaps,approval,"really good, especially music",Reddit,Twitter,New York,user_026006,18-24,food_related,growing,0.957,positive,0.478,FALSE,72,0,2,0.008,FALSE,581
+224,03/01/2020 15:11,simp,insult,someone overly devoted to another person,Reddit,Reddit,Illinois,user_312925,25-30,humor,growing,0.609,negative,-0.728,FALSE,6,0,2,0.001,FALSE,155
+225,03/01/2020 15:19,slaps,approval,"really good, especially music",Reddit,TikTok,Colorado,user_108840,18-24,news_reaction,growing,0.957,negative,-0.887,FALSE,26,27,29,0.025,FALSE,581
+226,03/01/2020 15:33,slaps,approval,"really good, especially music",Reddit,TikTok,UK,user_479146,41+,storytelling,growing,0.957,positive,0.753,FALSE,15,0,0,0.002,FALSE,581
+227,03/01/2020 15:41,slaps,approval,"really good, especially music",Reddit,Twitter,Canada,user_162558,18-24,work_school,growing,0.957,positive,0.883,FALSE,17,0,0,0.002,FALSE,581
+228,03/01/2020 15:41,simp,insult,someone overly devoted to another person,Reddit,Reddit,Canada,user_378357,13-17,commenting,growing,0.609,positive,0.423,FALSE,19,2,8,0.005,FALSE,155
+229,03/01/2020 15:58,slaps,approval,"really good, especially music",Reddit,Twitter,New York,user_003088,31-40,celebrity_gossip,growing,0.957,positive,0.733,FALSE,20,2,1,0.003,FALSE,581
+230,03/01/2020 16:12,slaps,approval,"really good, especially music",Reddit,TikTok,Colorado,user_112281,25-30,meme_reference,growing,0.957,negative,-0.997,FALSE,29,7,18,0.012,FALSE,581
+231,03/01/2020 16:19,periodt,emphasis,"end of discussion, period",Twitter,TikTok,Australia,user_252693,13-17,storytelling,growing,0.829,positive,0.378,FALSE,32,10,7,0.01,FALSE,247
+232,03/01/2020 16:20,no cap,emphasis,"no lie, for real",Twitter,Twitch,Philippines,user_019147,25-30,storytelling,growing,0.555,positive,0.793,FALSE,7,0,0,0.001,FALSE,216
+233,03/01/2020 16:21,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Georgia,user_073364,41+,compliment,growing,0.829,positive,0.327,FALSE,9,0,1,0.001,FALSE,247
+234,03/01/2020 16:24,hits different,emotion,affects you in a unique way,Twitter,TikTok,Canada,user_257494,31-40,music_discussion,growing,0.286,neutral,-0.183,FALSE,61,0,0,0.006,FALSE,63
+235,03/01/2020 16:35,slaps,approval,"really good, especially music",Reddit,Reddit,New York,user_299298,18-24,work_school,growing,0.957,positive,0.754,FALSE,31,4,4,0.006,FALSE,581
+236,03/01/2020 16:38,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Florida,user_348581,31-40,criticism,growing,0.562,positive,0.392,FALSE,17,0,2,0.002,FALSE,94
+237,03/01/2020 16:59,hits different,emotion,affects you in a unique way,Twitter,TikTok,UK,user_464090,18-24,self_description,growing,0.286,positive,0.835,FALSE,16,3,1,0.003,FALSE,63
+238,03/01/2020 17:06,periodt,emphasis,"end of discussion, period",Twitter,TikTok,Texas,user_081289,13-17,fashion_beauty,growing,0.829,positive,0.509,FALSE,146,17,3,0.024,FALSE,247
+239,03/01/2020 17:10,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Philippines,user_221444,13-17,commenting,growing,0.829,neutral,0.044,FALSE,111,1,3,0.013,FALSE,247
+240,03/01/2020 17:11,slaps,approval,"really good, especially music",Reddit,Twitter,Texas,user_199935,25-30,compliment,growing,0.957,positive,0.602,FALSE,19,1,21,0.009,FALSE,581
+241,03/01/2020 17:11,periodt,emphasis,"end of discussion, period",Twitter,Twitter,New York,user_459006,18-24,self_description,growing,0.829,positive,0.586,TRUE,14,0,3,0.002,FALSE,247
+242,03/01/2020 17:29,no cap,emphasis,"no lie, for real",Twitter,Instagram,Colorado,user_065518,18-24,reaction,growing,0.555,positive,0.766,FALSE,10,1,4,0.003,FALSE,216
+243,03/01/2020 17:41,hits different,emotion,affects you in a unique way,Twitter,Reddit,Germany,user_490334,31-40,commenting,growing,0.286,positive,0.857,FALSE,7,0,0,0.001,FALSE,63
+244,03/01/2020 17:48,no cap,emphasis,"no lie, for real",Twitter,Reddit,Texas,user_424463,18-24,food_related,growing,0.555,positive,0.887,FALSE,29,0,2,0.004,FALSE,216
+245,03/01/2020 17:57,hits different,emotion,affects you in a unique way,Twitter,Twitter,Illinois,user_097164,18-24,food_related,growing,0.286,negative,-0.925,FALSE,13,0,2,0.002,FALSE,63
+246,03/01/2020 18:24,slaps,approval,"really good, especially music",Reddit,TikTok,South Africa,user_289663,13-17,dating_context,growing,0.957,positive,0.942,FALSE,514,8,0,0.055,FALSE,581
+247,03/01/2020 19:20,periodt,emphasis,"end of discussion, period",Twitter,Twitter,New York,user_284197,41+,music_discussion,growing,0.829,negative,-0.537,FALSE,11,0,6,0.003,FALSE,247
+248,03/01/2020 19:26,slaps,approval,"really good, especially music",Reddit,Reddit,UK,user_467706,18-24,humor,growing,0.957,neutral,-0.286,TRUE,13,7,4,0.006,FALSE,581
+249,03/01/2020 19:33,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Germany,user_460364,18-24,reaction,growing,0.562,positive,0.386,FALSE,28,6,2,0.006,FALSE,94
+250,03/01/2020 19:34,vibe check,social,checking someone's mood/energy,TikTok,YouTube,Ohio,user_056785,25-30,news_reaction,growing,0.562,neutral,0.278,FALSE,213,0,4,0.023,FALSE,94
+251,03/01/2020 19:34,simp,insult,someone overly devoted to another person,Reddit,Twitter,Pennsylvania,user_389590,31-40,music_discussion,growing,0.609,negative,-0.847,TRUE,5,0,0,0.001,FALSE,155
+252,03/01/2020 19:35,simp,insult,someone overly devoted to another person,Reddit,TikTok,Texas,user_159722,18-24,casual_conversation,growing,0.609,negative,-0.621,FALSE,267,3,4,0.029,FALSE,155
+253,03/01/2020 19:38,slaps,approval,"really good, especially music",Reddit,Twitter,Washington,user_343601,25-30,commenting,growing,0.957,positive,0.437,FALSE,1,1,0,0.001,FALSE,581
+254,03/01/2020 19:42,hits different,emotion,affects you in a unique way,Twitter,Twitter,Arizona,user_461980,13-17,music_discussion,growing,0.286,positive,0.806,FALSE,13,4,11,0.007,FALSE,63
+255,03/01/2020 19:48,no cap,emphasis,"no lie, for real",Twitter,Reddit,New York,user_066937,18-24,commenting,growing,0.555,positive,0.925,FALSE,23,4,9,0.007,FALSE,216
+256,03/01/2020 19:50,no cap,emphasis,"no lie, for real",Twitter,Twitter,Canada,user_142230,18-24,reaction,growing,0.555,neutral,-0.175,FALSE,32,2,2,0.005,FALSE,216
+257,03/01/2020 20:00,slaps,approval,"really good, especially music",Reddit,Reddit,Brazil,user_164290,25-30,meme_reference,growing,0.957,negative,-0.814,FALSE,18,4,17,0.009,FALSE,581
+258,03/01/2020 20:02,hits different,emotion,affects you in a unique way,Twitter,Reddit,Pennsylvania,user_328123,13-17,storytelling,growing,0.286,positive,0.383,FALSE,23,0,2,0.003,FALSE,63
+259,03/01/2020 20:03,slaps,approval,"really good, especially music",Reddit,Reddit,Pennsylvania,user_249191,25-30,news_reaction,growing,0.957,positive,0.628,FALSE,11,0,0,0.001,FALSE,581
+260,03/01/2020 20:07,slaps,approval,"really good, especially music",Reddit,TikTok,South Africa,user_151201,25-30,storytelling,growing,0.957,positive,0.492,FALSE,152,3,15,0.021,FALSE,581
+261,03/01/2020 20:23,slaps,approval,"really good, especially music",Reddit,Instagram,Florida,user_105434,25-30,compliment,growing,0.957,positive,0.867,FALSE,23,0,0,0.002,FALSE,581
+262,03/01/2020 20:41,hits different,emotion,affects you in a unique way,Twitter,Twitch,Texas,user_127602,25-30,news_reaction,growing,0.286,negative,-0.917,FALSE,2,0,0,0,FALSE,63
+263,03/01/2020 20:48,slaps,approval,"really good, especially music",Reddit,Twitter,Pennsylvania,user_434924,13-17,reaction,growing,0.957,neutral,-0.011,FALSE,13,3,21,0.009,FALSE,581
+264,03/01/2020 20:51,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Nigeria,user_001809,31-40,food_related,growing,0.829,neutral,-0.006,FALSE,5,0,0,0.001,FALSE,247
+265,03/01/2020 21:08,simp,insult,someone overly devoted to another person,Reddit,Discord,Texas,user_436336,25-30,humor,growing,0.609,neutral,-0.276,FALSE,38,0,2,0.004,FALSE,155
+266,03/01/2020 21:13,vibe check,social,checking someone's mood/energy,TikTok,Twitch,Pennsylvania,user_198731,41+,self_description,growing,0.562,positive,0.796,FALSE,8,0,1,0.001,FALSE,94
+267,03/01/2020 21:34,hits different,emotion,affects you in a unique way,Twitter,Twitter,Pennsylvania,user_348243,18-24,gaming,growing,0.286,positive,0.858,FALSE,13,1,6,0.004,FALSE,63
+268,03/01/2020 21:35,no cap,emphasis,"no lie, for real",Twitter,TikTok,Michigan,user_017429,31-40,dating_context,growing,0.555,neutral,-0.196,FALSE,39,0,1,0.004,FALSE,216
+269,03/01/2020 21:42,vibe check,social,checking someone's mood/energy,TikTok,Twitter,Florida,user_351924,18-24,self_description,growing,0.562,positive,0.712,FALSE,1,0,5,0.002,FALSE,94
+270,03/01/2020 21:43,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Georgia,user_489710,25-30,work_school,growing,0.829,negative,-0.651,FALSE,136,0,0,0.014,FALSE,247
+271,03/01/2020 21:44,slaps,approval,"really good, especially music",Reddit,Twitter,New York,user_494708,18-24,criticism,growing,0.957,positive,0.864,FALSE,120,4,8,0.016,FALSE,581
+272,03/01/2020 21:55,slaps,approval,"really good, especially music",Reddit,TikTok,Texas,user_176556,31-40,self_description,growing,0.957,positive,0.37,FALSE,48,0,0,0.005,FALSE,581
+273,03/01/2020 22:01,periodt,emphasis,"end of discussion, period",Twitter,Twitter,Michigan,user_132506,13-17,fashion_beauty,growing,0.829,positive,0.755,FALSE,0,5,1,0.003,FALSE,247
+274,03/01/2020 22:24,slaps,approval,"really good, especially music",Reddit,Reddit,Canada,user_395425,31-40,food_related,growing,0.957,positive,0.999,FALSE,6,0,2,0.001,FALSE,581
+275,03/01/2020 22:45,simp,insult,someone overly devoted to another person,Reddit,YouTube,New York,user_362193,41+,criticism,growing,0.609,negative,-0.308,FALSE,9,1,0,0.001,FALSE,155
+276,03/01/2020 22:50,periodt,emphasis,"end of discussion, period",Twitter,Instagram,Pennsylvania,user_081839,31-40,music_discussion,growing,0.829,neutral,0.162,FALSE,63,0,9,0.009,FALSE,247
+277,03/01/2020 22:53,simp,insult,someone overly devoted to another person,Reddit,TikTok,Australia,user_118974,31-40,self_description,growing,0.609,positive,0.541,FALSE,66,2,3,0.008,FALSE,155
+278,03/01/2020 23:00,simp,insult,someone overly devoted to another person,Reddit,Reddit,Philippines,user_293127,18-24,commenting,growing,0.609,positive,0.773,FALSE,70,0,2,0.008,FALSE,155
+279,03/01/2020 23:09,simp,insult,someone overly devoted to another person,Reddit,TikTok,India,user_084580,31-40,criticism,growing,0.609,neutral,-0.081,TRUE,46,0,8,0.007,FALSE,155
+280,03/01/2020 23:41,simp,insult,someone overly devoted to another person,Reddit,TikTok,South Africa,user_457487,31-40,news_reaction,growing,0.609,neutral,-0.126,FALSE,22,0,2,0.003,FALSE,155
+281,04/01/2020 0:46,slaps,approval,"really good, especially music",Reddit,Reddit,California,user_430721,41+,casual_conversation,growing,0.959,positive,0.761,FALSE,13,0,0,0.001,FALSE,582
+282,04/01/2020 1:29,simp,insult,someone overly devoted to another person,Reddit,YouTube,Nigeria,user_175134,18-24,work_school,growing,0.612,neutral,-0.059,FALSE,125,2,21,0.02,FALSE,156
+283,04/01/2020 2:25,no cap,emphasis,"no lie, for real",Twitter,TikTok,UK,user_061601,18-24,storytelling,growing,0.557,positive,0.363,FALSE,112,16,15,0.024,FALSE,217
+284,04/01/2020 4:29,vibe check,social,checking someone's mood/energy,TikTok,TikTok,India,user_475586,18-24,storytelling,growing,0.567,positive,0.524,FALSE,57,4,2,0.008,FALSE,95
+285,04/01/2020 5:04,no cap,emphasis,"no lie, for real",Twitter,TikTok,Texas,user_449002,41+,food_related,growing,0.557,neutral,-0.203,FALSE,4,0,5,0.002,FALSE,217
+286,04/01/2020 6:22,periodt,emphasis,"end of discussion, period",Twitter,Instagram,South Africa,user_244163,13-17,music_discussion,growing,0.832,positive,0.617,FALSE,114,25,14,0.028,FALSE,248
+287,04/01/2020 7:01,hits different,emotion,affects you in a unique way,Twitter,TikTok,UK,user_468971,25-30,meme_reference,growing,0.289,positive,0.919,FALSE,12,0,0,0.001,FALSE,64
+288,04/01/2020 7:33,no cap,emphasis,"no lie, for real",Twitter,TikTok,California,user_229933,13-17,reaction,growing,0.557,positive,0.83,FALSE,123,0,4,0.014,FALSE,217
+289,04/01/2020 8:08,no cap,emphasis,"no lie, for real",Twitter,Instagram,Colorado,user_236347,25-30,commenting,growing,0.557,neutral,0.038,FALSE,42,2,2,0.006,FALSE,217
+290,04/01/2020 8:18,bussin,approval,"really good, especially food",TikTok,TikTok,California,user_384366,13-17,meme_reference,growing,0.105,neutral,0.286,FALSE,17,0,3,0.003,FALSE,3
+291,04/01/2020 9:26,bussin,approval,"really good, especially food",TikTok,TikTok,Colorado,user_390224,13-17,compliment,growing,0.105,positive,0.659,FALSE,10,1,0,0.002,FALSE,3
+292,04/01/2020 9:26,slaps,approval,"really good, especially music",Reddit,YouTube,Illinois,user_217628,18-24,storytelling,growing,0.959,positive,0.583,FALSE,77,9,15,0.017,FALSE,582
+293,04/01/2020 9:51,no cap,emphasis,"no lie, for real",Twitter,TikTok,Colorado,user_480599,13-17,fashion_beauty,growing,0.557,neutral,-0.184,FALSE,20,0,0,0.002,FALSE,217
+294,04/01/2020 10:09,slaps,approval,"really good, especially music",Reddit,TikTok,South Africa,user_312791,25-30,news_reaction,growing,0.959,positive,0.982,FALSE,102,4,2,0.013,FALSE,582
+295,04/01/2020 10:13,periodt,emphasis,"end of discussion, period",Twitter,TikTok,Florida,user_142991,18-24,food_related,growing,0.832,positive,0.593,FALSE,162,7,24,0.027,FALSE,248
+296,04/01/2020 10:16,simp,insult,someone overly devoted to another person,Reddit,Instagram,California,user_442188,18-24,humor,growing,0.612,negative,-0.71,TRUE,15,3,8,0.005,FALSE,156
+297,04/01/2020 10:20,vibe check,social,checking someone's mood/energy,TikTok,TikTok,Mexico,user_413146,13-17,work_school,growing,0.567,positive,0.494,FALSE,78,0,15,0.012,FALSE,95
+298,04/01/2020 10:30,hits different,emotion,affects you in a unique way,Twitter,Twitter,New York,user_379140,18-24,compliment,growing,0.289,positive,0.709,FALSE,29,0,6,0.005,FALSE,64
+299,04/01/2020 10:30,no cap,emphasis,"no lie, for real",Twitter,TikTok,Illinois,user_159126,13-17,celebrity_gossip,growing,0.557,neutral,0.182,FALSE,34,7,2,0.008,FALSE,217
+300,04/01/2020 10:33,simp,insult,someone overly devoted to another person,Reddit,Instagram,Texas,user_040943,13-17,humor,growing,0.612,negative,-0.455,FALSE,3,15,0,0.008,FALSE,156
