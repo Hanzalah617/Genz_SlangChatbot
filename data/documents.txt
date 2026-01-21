@@ -1,0 +1,5 @@
+Groq is an AI inference platform that provides ultra-fast LPU-based processing.
+Groq supports large language models like LLaMA 3 and Mixtral.
+Retrieval Augmented Generation improves accuracy by searching relevant documents.
+Streamlit is used to build interactive web applications.
+FAISS is a vector database for similarity search.
