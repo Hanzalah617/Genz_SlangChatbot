@@ -7,9 +7,9 @@ from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.prompts import ChatPromptTemplate
 
-# These are the specific imports that usually cause the error
+# Update these specific lines:
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.chains.retrieval import create_retrieval_chain
+from langchain.chains import create_retrieval_chain
 
 # --- Page Configuration ---
 st.set_page_config(page_title="GenZ Slang Chatbot", page_icon="😎")
