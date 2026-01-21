@@ -1,79 +1,78 @@
 import streamlit as st
 import os
-
-# Essential LangChain Components
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.prompts import ChatPromptTemplate
-
-# These are the modern, direct import paths
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.chains.retrieval import create_retrieval_chain
+from langchain_core.runnables import RunnablePassthrough
+from langchain_core.output_parsers import StrOutputParser
 
 # --- Page Config ---
 st.set_page_config(page_title="GenZ Slang Bot", page_icon="😎")
 st.title("😎 GenZ Slang Chatbot")
 
-# --- API Key Setup ---
-# Set 'GROQ_API_KEY' in Streamlit Cloud -> Settings -> Secrets
+# --- API Key ---
 groq_api_key = os.getenv("GROQ_API_KEY")
-
 if not groq_api_key:
-    st.error("Missing GROQ_API_KEY. Please add it to Streamlit Secrets.")
+    st.error("Please add GROQ_API_KEY to Streamlit Secrets.")
     st.stop()
 
-# --- Vector Store Logic ---
+# --- Vector Store ---
 @st.cache_resource
 def load_vectorstore():
-    # Path handling for Streamlit Cloud
-    data_path = "data/documents.txt"
-    
-    if not os.path.exists(data_path):
-        st.error(f"File not found: {data_path}. Please check your GitHub folder structure.")
-        st.stop()
-    
-    with open(data_path, "r", encoding="utf-8") as f:
+    if not os.path.exists("data/documents.txt"):
+        # Create dummy data if file is missing to prevent crash
+        os.makedirs("data", exist_ok=True)
+        with open("data/documents.txt", "w") as f:
+            f.write("Skibidi: Bad or cool. Rizz: Charisma. Gyatt: Wow.")
+
+    with open("data/documents.txt", "r", encoding="utf-8") as f:
         text = f.read()
 
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     docs = splitter.create_documents([text])
-
-    # Using langchain-huggingface for better stability
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     return FAISS.from_documents(docs, embeddings)
 
-# Initialize
 vectorstore = load_vectorstore()
 retriever = vectorstore.as_retriever()
 
-# --- Chain Setup ---
+# --- The RAG Chain (Modern LCEL Version) ---
 llm = ChatGroq(model_name="llama3-8b-8192", api_key=groq_api_key)
 
-# The 'context' and 'input' variables are required by the retrieval chains
-prompt = ChatPromptTemplate.from_template("""
-You are a GenZ slang expert. Use the context below to explain the terms.
-Context:
-{context}
+template = """
+You are a GenZ slang expert. Use the context to answer the question. 
+If you don't know, say you're 'not vibing with that info'.
 
-Question: {input}
+Context: {context}
+Question: {question}
 
-Answer:""")
+Answer:"""
 
-# Create the chains using the new standard
-combine_docs_chain = create_stuff_documents_chain(llm, prompt)
-rag_chain = create_retrieval_chain(retriever, combine_docs_chain)
+prompt = ChatPromptTemplate.from_template(template)
+
+def format_docs(docs):
+    return "\n\n".join(doc.page_content for doc in docs)
+
+# This is the "Engine" - it replaces the broken retrieval_chain
+rag_chain = (
+    {"context": retriever | format_docs, "question": RunnablePassthrough()}
+    | prompt
+    | llm
+    | StrOutputParser()
+)
 
 # --- UI ---
 user_query = st.text_input("What slang do you need translated?")
 
 if user_query:
-    with st.spinner("Searching the vibes..."):
+    with st.spinner("Cooking..."):
         try:
-            response = rag_chain.invoke({"input": user_query})
+            # We use .invoke directly on our custom chain
+            response = rag_chain.invoke(user_query)
             st.markdown("### ✨ The Tea:")
-            st.success(response["answer"])
+            st.success(response)
         except Exception as e:
-            st.error(f"Something went wrong: {e}")
+            st.error(f"Error: {e}")
